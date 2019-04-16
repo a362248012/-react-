@@ -9,6 +9,7 @@ const msite = asyncComponent(() => import("@/pages/msite/msite"))
 const shop = asyncComponent(() => import("@/pages/shop/shop"))
 const food = asyncComponent(() => import("@/pages/food/food"))
 const technology = asyncComponent(() => import("@/pages/technology/technology"))
+const search = asyncComponent(() => import("@pages/search/search"))
 
 
 export default class RouteConfig extends Component {
@@ -24,6 +25,7 @@ export default class RouteConfig extends Component {
           <Route path="/shop/:id"  component= {shop}/>
           <Route path="/food/:geohash/:id/:title"  component= {food}/>
           <Route path="/technology"  component= {technology}/>
+          <Route path="/search" component= {search}/>
           <Redirect exact from='/' to='/profile'/>
           <Route component= {profile}/>
         </Switch>
