@@ -9,7 +9,7 @@ const msite = asyncComponent(() => import("@/pages/msite/msite"))
 const shop = asyncComponent(() => import("@/pages/shop/shop"))
 const food = asyncComponent(() => import("@/pages/food/food"))
 const technology = asyncComponent(() => import("@/pages/technology/technology"))
-const search = asyncComponent(() => import("@pages/search/search"))
+const search = asyncComponent(() => import("@/pages/search/search"))
 
 
 export default class RouteConfig extends Component {
