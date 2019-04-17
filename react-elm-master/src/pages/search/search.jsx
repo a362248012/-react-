@@ -7,22 +7,24 @@ class Search extends Component {
     goBack = () => {
         this.props.history.push('/')
     }
-
+    state = {
+        a: {color: 'rgb(255, 153, 0)'},
+        iconUrl: 'https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/'
+    }
     render () {
         return (
             <div className="search-container">
-                <Header title="返回" goBack={this.goBack}/>
-                <ul>
-                    <li>一个</li>
-                    <li>二个</li>
-                    <li>三个</li>
-                    <li>四个</li>
-                    <li>五个</li>
-                    <li>六个</li>
-                    <li>七个</li>
-                    <li>八个</li>
-                </ul>
-                <Footer/>
+                <div className='gold-shop'>
+                    <div>
+                        <div className='title' style={this.state.a}>金币商城</div>
+                        <span className='content'>0元好物在这里</span>
+                    </div>
+                    <img className='icon' src={this.state.iconUrl} alt=""/>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         )
     }

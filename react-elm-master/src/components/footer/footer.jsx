@@ -13,7 +13,7 @@ class Footer extends Component {
         </NavLink>
         <NavLink className='guide-item' to='/search'>
           <div className='icon-zhinanzhen icon-style'></div>
-          <span>搜索</span>
+          <span>发现</span>
         </NavLink>
         <NavLink className='guide-item' to='/technology'>
           <div className='icon-dingdan icon-style'></div>
