@@ -2,6 +2,9 @@
 
 .search-container {
     background-color: #ffffff;
+    display: flex;
+    line-height: 1.2;
+    font-size: 16px;
     .gold-shop {
         width: 50%;
         height: 42vw;
@@ -24,5 +27,12 @@
             align-self: flex-end;
         }
             
+    }
+    .other-shop {
+        width: 50%;
+        font-size: 16px;
+        .recommend-box {
+            padding: 4vw;
+        }
     }
 }

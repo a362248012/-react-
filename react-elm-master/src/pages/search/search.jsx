@@ -21,9 +21,15 @@ class Search extends Component {
                     </div>
                     <img className='icon' src={this.state.iconUrl} alt=""/>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
+                <div className='other-shop'>
+                    <div className='recommend-box'>
+                        <p className='title'>推荐有奖</p>
+                        <p className='content'>20元现金拿不停</p>
+                    </div>
+                    <div>
+                        <p className='title'>周边优惠</p>
+                        <p className='content'>领取口碑好劵</p>
+                    </div>
                 </div>
             </div>
         )
